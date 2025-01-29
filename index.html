@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versículos da Bíblia - Provérbios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .versiculo {
+            font-size: 1.2em;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+        }
+        .final {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Versículos de Provérbios - Capítulos 1 e 2</h1>
+    
+    <div id="versiculos"></div>
+
+    <div id="mensagem" class="final"></div>
+
+    <script>
+        const versiculos = [
+            "Provérbios 1:7 - O temor do Senhor é o princípio do saber; os insensatos desprezam a sabedoria e a instrução.",
+            "Provérbios 1:8 - Filho meu, ouve a instrução de teu pai, e não deixes o ensino de tua mãe.",
+            "Provérbios 1:10 - Filho meu, se os pecadores te quiserem seduzir, não consintas.",
+            "Provérbios 1:33 - Mas o que me der ouvidos habitará em segurança, estará tranqüilo, sem temer mal algum.",
+            "Provérbios 2:6 - Porque o Senhor dá a sabedoria; da sua boca é que vem o conhecimento e o entendimento.",
+            "Provérbios 2:7 - Ele reserva a verdadeira sabedoria para os justos; é escudo para os que caminham na sinceridade.",
+            "Provérbios 2:11 - O bom senso te guardará, e o entendimento te protegerá.",
+            "Provérbios 2:12 - Para te livrar do mau caminho, e do homem que fala coisas perversas."
+        ];
+
+        // Exibindo os versículos na página
+        const versiculoContainer = document.getElementById('versiculos');
+        versiculos.forEach(versiculo => {
+            const div = document.createElement('div');
+            div.classList.add('versiculo');
+            div.textContent = versiculo;
+            versiculoContainer.appendChild(div);
+        });
+
+        // Exibindo a mensagem final
+        const mensagemContainer = document.getElementById('mensagem');
+        mensagemContainer.textContent = "Obrigado, professora Karol!";
+    </script>
+</body>
+</html>
